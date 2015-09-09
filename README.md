@@ -1,0 +1,3 @@
+# segmentAndList
+
+![](./segmentAndList.gif)
