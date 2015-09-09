@@ -1,3 +1,3 @@
 # segmentAndList
 
-![](./segmentAndList.gif)
+![](./xiaomeiADPage.gif)
