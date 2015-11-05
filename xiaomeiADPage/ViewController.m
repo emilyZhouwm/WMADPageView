@@ -48,7 +48,7 @@
 //                            }];
     //[_adPageView setBAutoRoll:YES];
     
-    _HeadHeight = 112 * kScreen_Width / 320;
+    _HeadHeight = 112/*原始高度*/ * kScreen_Width / 320/*原始宽度*/;
     _headHLayout.constant = _HeadHeight;
 }
 
