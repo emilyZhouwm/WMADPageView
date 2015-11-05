@@ -11,30 +11,51 @@
 
 #define kScreen_Width [UIScreen mainScreen].bounds.size.width
 
-@interface ViewController ()
+@interface ViewController () <WMAdPageViewDelegate, UIScrollViewDelegate>
 {
     CGFloat _HeadHeight;
 }
 
 @property (weak, nonatomic) IBOutlet WMAdPageView *adPageView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *headHLayout;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *headHLayout; // 控制下拉时轮播放大
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *headTopLayout;// 控制上滚时轮播跟随上滚
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
 @implementation ViewController
 
+- (void)updateViewConstraints
+{
+    [super updateViewConstraints];
+    self.scrollView.contentInset = UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     _adPageView.dotPosition = WMAdPageDotRight;
     [_adPageView setAdsWithImages:@[@"m1", @"m2", @"m3", @"m4", @"m5"]
                             block:^(NSInteger clickIndex){
                                 NSLog(@"%ld", (long)clickIndex);
                             }];
+    
+//    _adPageView.delegate = self;
+//    [_adPageView setAdsWithImages:@[@"xxxurl", @"xxxurl", @"xxxurl", @"xxxurl"]
+//                            block:^(NSInteger clickIndex){
+//                                NSLog(@"%ld", (long)clickIndex);
+//                            }];
     //[_adPageView setBAutoRoll:YES];
     
     _HeadHeight = 112 * kScreen_Width / 320;
     _headHLayout.constant = _HeadHeight;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    _scrollView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,7 +68,17 @@
 {
     if (scrollView.contentOffset.y < 0) {
         _headHLayout.constant = _HeadHeight - scrollView.contentOffset.y;
+    } else {
+        _headTopLayout.constant = -scrollView.contentOffset.y;
     }
 }
+
+#pragma mark - WMAdPageViewDelegate
+- (void)setWebImage:(UIImageView *)imgView imgUrl:(NSString *)imgUrl
+{
+    // 例如
+    //[imgView sd_setImageWithURL:[NSURL URLWithString:imgUrl] placeholderImage:[UIImage imageNamed:@"default"]];
+}
+
 
 @end

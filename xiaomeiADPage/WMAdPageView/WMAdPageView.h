@@ -28,11 +28,12 @@ typedef void (^WMAdPageCallback)(NSInteger clickIndex);
 
 + (void)setCellClass:(Class )cellClass; // 热点样式自定义
 
-@property (nonatomic, assign) BOOL bWebImage; // 设置是否为网络图片
 @property (nonatomic, assign) BOOL bAutoRoll; // 设置是否自动滚动
 @property (nonatomic, assign) WMAdPageDotPosition dotPosition; // 热点位置，默认居中
 @property (nonatomic, assign) NSInteger dotSpacing; // 热点间距，默认8
-@property (nonatomic, assign) id<WMAdPageViewDelegate> delegate;
+
+@property (nonatomic, assign) BOOL bWebImage; // 设置是否为网络图片
+@property (nonatomic, assign) id<WMAdPageViewDelegate> delegate;// 如果为网络图片，可在外部用SDWebImage加载图片，内部只有dataWithContentsOfURL
 
 - (void)setAdsWithImages:(NSArray *)imageArray block:(WMAdPageCallback)block;
 

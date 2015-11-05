@@ -55,6 +55,7 @@ static Class _cellClass = nil;
 {
     [super layoutSubviews];
     if (_scView) {
+        _scView.contentInset = UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0);
         [_scView setFrame:self.bounds];
         
         CGFloat w = self.frame.size.width;

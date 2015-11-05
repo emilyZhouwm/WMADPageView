@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="R6h-TH-1an">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eFR-jn-Cb1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -17,29 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAS-mh-m6t">
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAS-mh-m6t">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV8-hY-P4M">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉放大，上滚跟随" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xI5-zy-eA7">
+                                                <rect key="frame" x="84" y="281" width="153" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="sY8-TA-6Vk"/>
+                                            <constraint firstItem="xI5-zy-eA7" firstAttribute="top" secondItem="nV8-hY-P4M" secondAttribute="top" constant="281" id="3MJ-gv-9gG"/>
+                                            <constraint firstItem="xI5-zy-eA7" firstAttribute="centerX" secondItem="nV8-hY-P4M" secondAttribute="centerX" id="VBU-xf-7ox"/>
+                                            <constraint firstAttribute="height" constant="800" id="sY8-TA-6Vk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="nV8-hY-P4M" secondAttribute="trailing" id="5pY-BR-d01"/>
                                     <constraint firstItem="nV8-hY-P4M" firstAttribute="leading" secondItem="BAS-mh-m6t" secondAttribute="leading" id="Mmd-ni-AtS"/>
                                     <constraint firstItem="nV8-hY-P4M" firstAttribute="top" secondItem="BAS-mh-m6t" secondAttribute="top" id="Opd-x2-Q9G"/>
+                                    <constraint firstItem="nV8-hY-P4M" firstAttribute="top" secondItem="BAS-mh-m6t" secondAttribute="top" id="Pg5-KU-9MY"/>
+                                    <constraint firstItem="nV8-hY-P4M" firstAttribute="width" secondItem="BAS-mh-m6t" secondAttribute="width" id="e9i-In-gWI"/>
                                     <constraint firstAttribute="bottom" secondItem="nV8-hY-P4M" secondAttribute="bottom" id="nfQ-ok-6yS"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="R6h-TH-1an" id="Vvz-Jh-ub3"/>
-                                </connections>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Opd-x2-Q9G"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25d-3x-I2U" customClass="WMAdPageView">
-                                <rect key="frame" x="0.0" y="20" width="320" height="112"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="112"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="25d-3x-I2U" secondAttribute="height" multiplier="16:11" id="Aae-uN-eIE"/>
@@ -55,32 +74,63 @@
                                 </variation>
                             </view>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="25d-3x-I2U" secondAttribute="trailing" id="05G-1E-SSu"/>
-                            <constraint firstItem="25d-3x-I2U" firstAttribute="leading" secondItem="IDy-hO-dN0" secondAttribute="leading" id="A9A-PT-37E"/>
+                            <constraint firstItem="25d-3x-I2U" firstAttribute="leading" secondItem="IDy-hO-dN0" secondAttribute="leading" id="9yg-oe-uX0"/>
+                            <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="1PD-Ca-Z9K" secondAttribute="bottom" id="Aey-J8-nFw"/>
                             <constraint firstItem="BAS-mh-m6t" firstAttribute="leading" secondItem="IDy-hO-dN0" secondAttribute="leading" id="Dal-Ll-V35"/>
                             <constraint firstItem="nV8-hY-P4M" firstAttribute="width" secondItem="IDy-hO-dN0" secondAttribute="width" id="Hwi-Cm-Zz4"/>
+                            <constraint firstItem="25d-3x-I2U" firstAttribute="centerX" secondItem="IDy-hO-dN0" secondAttribute="centerX" id="IHH-9z-JSb"/>
+                            <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="IDy-hO-dN0" secondAttribute="top" id="Ias-Yx-nht"/>
                             <constraint firstAttribute="bottom" secondItem="BAS-mh-m6t" secondAttribute="bottom" id="KUa-S7-YeZ"/>
                             <constraint firstAttribute="trailing" secondItem="BAS-mh-m6t" secondAttribute="trailing" id="LhT-Mh-SGt"/>
-                            <constraint firstItem="25d-3x-I2U" firstAttribute="top" secondItem="1PD-Ca-Z9K" secondAttribute="bottom" id="OS3-w9-GFX"/>
-                            <constraint firstAttribute="centerX" secondItem="25d-3x-I2U" secondAttribute="centerX" id="lBt-UM-Kfm"/>
+                            <constraint firstAttribute="trailing" secondItem="25d-3x-I2U" secondAttribute="trailing" id="TQc-cs-J6R"/>
+                            <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="1PD-Ca-Z9K" secondAttribute="bottom" id="psf-hS-gQM"/>
                             <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="IDy-hO-dN0" secondAttribute="top" id="vHQ-ik-C05"/>
+                            <constraint firstItem="25d-3x-I2U" firstAttribute="top" secondItem="1PD-Ca-Z9K" secondAttribute="bottom" id="zd0-k8-mwW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="05G-1E-SSu"/>
-                                <exclude reference="A9A-PT-37E"/>
+                                <exclude reference="Aey-J8-nFw"/>
+                                <exclude reference="psf-hS-gQM"/>
+                                <exclude reference="vHQ-ik-C05"/>
+                                <exclude reference="Hwi-Cm-Zz4"/>
+                                <exclude reference="9yg-oe-uX0"/>
+                                <exclude reference="TQc-cs-J6R"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="d6H-SJ-bde"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="adPageView" destination="25d-3x-I2U" id="wmr-Vh-6fY"/>
                         <outlet property="headHLayout" destination="R2Q-4N-ggM" id="Ces-57-s4h"/>
+                        <outlet property="headTopLayout" destination="zd0-k8-mwW" id="AWv-K7-8GC"/>
+                        <outlet property="scrollView" destination="BAS-mh-m6t" id="ntf-Es-lsq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpr-jO-K4c" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ic5-qX-ENH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eFR-jn-Cb1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="egF-Mr-35W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="R6h-TH-1an" kind="relationship" relationship="rootViewController" id="dBg-Cv-cXX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fx-sR-OHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="274" y="461"/>
         </scene>
