@@ -5,6 +5,13 @@
 ###可外部加载网络图片
 ###可设置页面指示位置
 ###自定义页面指示样式动效
+### 简单使用
+
+
+    [_adPageView setAdsWithImages:@[@"m1", @"m2", @"m3", @"m4", @"m5"]
+                            block:^(NSInteger clickIndex){
+                                NSLog(@"%ld", (long)clickIndex);
+                            }];
 欢迎star交流
 图片版权：考满分网
  
