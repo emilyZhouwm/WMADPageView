@@ -12,6 +12,10 @@
                             block:^(NSInteger clickIndex){
                                 NSLog(@"%ld", (long)clickIndex);
                             }];
+                            
+                            
+##pod 'xiaomeiADPage', :git => 'https://github.com/emilyZhouwm/xiaomeiADPage.git'
+                            
 欢迎star交流
 图片版权：考满分网
  
