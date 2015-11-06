@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/emilyZhouwm/xiaomeiADPage.git", :tag => "0.1.0" }
 
-  s.source_files  = "xiaomeiADPage/WMAdPageView/*.{h,m}", "xiaomeiADPage/WMAdPageView/TAPageControl/*.{h,m}"
+  s.source_files  = "xiaomeiADPage/WMAdPageView", "xiaomeiADPage/WMAdPageView/TAPageControl"
 
   s.public_header_files = "xiaomeiADPage/WMAdPageView/*.h"
 
