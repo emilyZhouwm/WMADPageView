@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/emilyZhouwm/xiaomeiADPage.git", :tag => "0.1.0" }
 
-  s.source_files  = "xiaomeiADPage/WMAdPageView", "xiaomeiADPage/WMAdPageView/**/*.{h,m}"
+  s.source_files  = "xiaomeiADPage/WMAdPageView/*.{h,m}", "xiaomeiADPage/WMAdPageView/TAPageControl/*.{h,m}"
 
-  s.public_header_files = "xiaomeiADPage/WMAdPageView/**/*.h"
+  s.public_header_files = "xiaomeiADPage/WMAdPageView/*.h"
 
   s.framework  = "UIKit"
   s.requires_arc = true
