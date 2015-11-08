@@ -14,13 +14,13 @@ Pod::Spec.new do |s|
                    * 可设置页面指示位置和样式动效
                    DESC
 
-  s.homepage     = "https://coding.net/u/emilyzhou/p/xiaomeiADPage/git"
+  s.homepage     = "https://coding.net/u/emilyzhou/p/WMADPageView/git"
   s.license      = "MIT"
   s.author       = { "EmilyZhou" => "scarlettzwm@gmail.com" }
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/emilyZhouwm/xiaomeiADPage.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/emilyZhouwm/WMADPageView.git", :tag => "0.1.0" }
 
   s.source_files  = "WMAdPageView/*.{h,m}"
 
