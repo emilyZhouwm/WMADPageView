@@ -5,7 +5,7 @@
 //  Copyright (c) 2015年 zwm. All rights reserved.
 //
 
-#import "TAAbstractDotView.h"
+#import "TAPageControl/TAAbstractDotView.h"
 
 @interface WMDotView : TAAbstractDotView
 

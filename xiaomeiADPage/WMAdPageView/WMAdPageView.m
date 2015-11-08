@@ -6,7 +6,7 @@
 //
 
 #import "WMAdPageView.h"
-#import "TAPageControl.h"
+#import "TAPageControl/TAPageControl.h"
 #import "WMDotView.h"
 
 static Class _cellClass = nil;
