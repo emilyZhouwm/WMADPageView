@@ -16,9 +16,9 @@
                             
    
 #可以直接拖入使用或者：                         
-##pod 'xiaomeiADPage', :git => 'https://github.com/emilyZhouwm/xiaomeiADPage.git'
+##pod 'WMADPageView', :git => 'https://github.com/emilyZhouwm/WMADPageView.git'
 ##或者将来可以
-##pod 'xiaomeiADPage', '~> 0.1.0'
+##pod 'WMADPageView', '~> 0.1.0'
 # 
                       
 ###网络图片方式：                        
