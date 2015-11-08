@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = "带点推拉效果的广告轮播效果"
 
   s.description  = <<-DESC
-                   A longer description of xiaomeiADPage in Markdown format.
+                   带点推拉效果的广告轮播效果.
 
                    * 可无限循环
                    * 可拉伸放大
