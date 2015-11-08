@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   end
 
   s.framework  = "UIKit"
-  s.requires_arc = true
+  s.requires_arc = true 
   #s.dependency 'TAPageControl', '~> 0.2.0'
 
 end
