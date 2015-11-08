@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "xiaomeiADPage"
+  s.name         = "WMAdPageView"
   s.version      = "0.1.0"
   s.summary      = "带点推拉效果的广告轮播效果"
 
@@ -22,13 +22,13 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/emilyZhouwm/xiaomeiADPage.git", :tag => "0.1.0" }
 
-  s.source_files  = "xiaomeiADPage/WMAdPageView/*.{h,m}"
+  s.source_files  = "WMAdPageView/*.{h,m}"
 
-  s.public_header_files = "xiaomeiADPage/WMAdPageView/*.h"
+  s.public_header_files = "WMAdPageView/*.h"
 
   s.subspec "TAPageControl" do |ta|
-      ta.source_files = "xiaomeiADPage/WMAdPageView/TAPageControl/*.{h,m}"
-      ta.public_header_files = "xiaomeiADPage/WMAdPageView/TAPageControl/*.h"
+      ta.source_files = "WMAdPageView/TAPageControl/*.{h,m}"
+      ta.public_header_files = "WMAdPageView/TAPageControl/*.h"
   end
 
   s.framework  = "UIKit"

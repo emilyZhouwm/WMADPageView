@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB5D00001BEF27D8005B2D2E /* WMDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5DFFFA1BEF27D8005B2D2E /* WMDotView.m */; };
+		EB5DFFFB1BEF27D8005B2D2E /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5DFFF01BEF27D8005B2D2E /* TAAbstractDotView.m */; };
+		EB5DFFFC1BEF27D8005B2D2E /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5DFFF21BEF27D8005B2D2E /* TAAnimatedDotView.m */; };
+		EB5DFFFD1BEF27D8005B2D2E /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5DFFF41BEF27D8005B2D2E /* TADotView.m */; };
+		EB5DFFFE1BEF27D8005B2D2E /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5DFFF61BEF27D8005B2D2E /* TAPageControl.m */; };
+		EB5DFFFF1BEF27D8005B2D2E /* WMAdPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5DFFF81BEF27D8005B2D2E /* WMAdPageView.m */; };
 		EBFE34141BA01D560077F605 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE34131BA01D560077F605 /* main.m */; };
 		EBFE34171BA01D560077F605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE34161BA01D560077F605 /* AppDelegate.m */; };
 		EBFE341A1BA01D560077F605 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE34191BA01D560077F605 /* ViewController.m */; };
@@ -14,12 +20,6 @@
 		EBFE341F1BA01D560077F605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFE341E1BA01D560077F605 /* Images.xcassets */; };
 		EBFE34221BA01D560077F605 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBFE34201BA01D560077F605 /* LaunchScreen.xib */; };
 		EBFE342E1BA01D560077F605 /* xiaomeiADPageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE342D1BA01D560077F605 /* xiaomeiADPageTests.m */; };
-		EBFE34471BA01D6D0077F605 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE343A1BA01D6D0077F605 /* TAAbstractDotView.m */; };
-		EBFE34481BA01D6D0077F605 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE343C1BA01D6D0077F605 /* TAAnimatedDotView.m */; };
-		EBFE34491BA01D6D0077F605 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE343E1BA01D6D0077F605 /* TADotView.m */; };
-		EBFE344A1BA01D6D0077F605 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE34401BA01D6D0077F605 /* TAPageControl.m */; };
-		EBFE344C1BA01D6D0077F605 /* WMAdPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE34441BA01D6D0077F605 /* WMAdPageView.m */; };
-		EBFE344D1BA01D6D0077F605 /* WMDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFE34461BA01D6D0077F605 /* WMDotView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB5DFFEF1BEF27D8005B2D2E /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		EB5DFFF01BEF27D8005B2D2E /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		EB5DFFF11BEF27D8005B2D2E /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		EB5DFFF21BEF27D8005B2D2E /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		EB5DFFF31BEF27D8005B2D2E /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		EB5DFFF41BEF27D8005B2D2E /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		EB5DFFF51BEF27D8005B2D2E /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		EB5DFFF61BEF27D8005B2D2E /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		EB5DFFF71BEF27D8005B2D2E /* WMAdPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMAdPageView.h; sourceTree = "<group>"; };
+		EB5DFFF81BEF27D8005B2D2E /* WMAdPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMAdPageView.m; sourceTree = "<group>"; };
+		EB5DFFF91BEF27D8005B2D2E /* WMDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDotView.h; sourceTree = "<group>"; };
+		EB5DFFFA1BEF27D8005B2D2E /* WMDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDotView.m; sourceTree = "<group>"; };
 		EBFE340E1BA01D560077F605 /* xiaomeiADPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaomeiADPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFE34121BA01D560077F605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFE34131BA01D560077F605 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,18 +58,6 @@
 		EBFE34271BA01D560077F605 /* xiaomeiADPageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaomeiADPageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFE342C1BA01D560077F605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBFE342D1BA01D560077F605 /* xiaomeiADPageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xiaomeiADPageTests.m; sourceTree = "<group>"; };
-		EBFE34391BA01D6D0077F605 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
-		EBFE343A1BA01D6D0077F605 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
-		EBFE343B1BA01D6D0077F605 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
-		EBFE343C1BA01D6D0077F605 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
-		EBFE343D1BA01D6D0077F605 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
-		EBFE343E1BA01D6D0077F605 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
-		EBFE343F1BA01D6D0077F605 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
-		EBFE34401BA01D6D0077F605 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
-		EBFE34431BA01D6D0077F605 /* WMAdPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMAdPageView.h; sourceTree = "<group>"; };
-		EBFE34441BA01D6D0077F605 /* WMAdPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMAdPageView.m; sourceTree = "<group>"; };
-		EBFE34451BA01D6D0077F605 /* WMDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDotView.h; sourceTree = "<group>"; };
-		EBFE34461BA01D6D0077F605 /* WMDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDotView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB5DFFED1BEF27D8005B2D2E /* WMAdPageView */ = {
+			isa = PBXGroup;
+			children = (
+				EB5DFFEE1BEF27D8005B2D2E /* TAPageControl */,
+				EB5DFFF71BEF27D8005B2D2E /* WMAdPageView.h */,
+				EB5DFFF81BEF27D8005B2D2E /* WMAdPageView.m */,
+				EB5DFFF91BEF27D8005B2D2E /* WMDotView.h */,
+				EB5DFFFA1BEF27D8005B2D2E /* WMDotView.m */,
+			);
+			path = WMAdPageView;
+			sourceTree = SOURCE_ROOT;
+		};
+		EB5DFFEE1BEF27D8005B2D2E /* TAPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				EB5DFFEF1BEF27D8005B2D2E /* TAAbstractDotView.h */,
+				EB5DFFF01BEF27D8005B2D2E /* TAAbstractDotView.m */,
+				EB5DFFF11BEF27D8005B2D2E /* TAAnimatedDotView.h */,
+				EB5DFFF21BEF27D8005B2D2E /* TAAnimatedDotView.m */,
+				EB5DFFF31BEF27D8005B2D2E /* TADotView.h */,
+				EB5DFFF41BEF27D8005B2D2E /* TADotView.m */,
+				EB5DFFF51BEF27D8005B2D2E /* TAPageControl.h */,
+				EB5DFFF61BEF27D8005B2D2E /* TAPageControl.m */,
+			);
+			path = TAPageControl;
+			sourceTree = "<group>";
+		};
 		EBFE34051BA01D560077F605 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +126,7 @@
 		EBFE34101BA01D560077F605 /* xiaomeiADPage */ = {
 			isa = PBXGroup;
 			children = (
-				EBFE34371BA01D6D0077F605 /* WMAdPageView */,
+				EB5DFFED1BEF27D8005B2D2E /* WMAdPageView */,
 				EBFE34151BA01D560077F605 /* AppDelegate.h */,
 				EBFE34161BA01D560077F605 /* AppDelegate.m */,
 				EBFE34181BA01D560077F605 /* ViewController.h */,
@@ -136,33 +163,6 @@
 				EBFE342C1BA01D560077F605 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EBFE34371BA01D6D0077F605 /* WMAdPageView */ = {
-			isa = PBXGroup;
-			children = (
-				EBFE34381BA01D6D0077F605 /* TAPageControl */,
-				EBFE34431BA01D6D0077F605 /* WMAdPageView.h */,
-				EBFE34441BA01D6D0077F605 /* WMAdPageView.m */,
-				EBFE34451BA01D6D0077F605 /* WMDotView.h */,
-				EBFE34461BA01D6D0077F605 /* WMDotView.m */,
-			);
-			path = WMAdPageView;
-			sourceTree = "<group>";
-		};
-		EBFE34381BA01D6D0077F605 /* TAPageControl */ = {
-			isa = PBXGroup;
-			children = (
-				EBFE34391BA01D6D0077F605 /* TAAbstractDotView.h */,
-				EBFE343A1BA01D6D0077F605 /* TAAbstractDotView.m */,
-				EBFE343B1BA01D6D0077F605 /* TAAnimatedDotView.h */,
-				EBFE343C1BA01D6D0077F605 /* TAAnimatedDotView.m */,
-				EBFE343D1BA01D6D0077F605 /* TADotView.h */,
-				EBFE343E1BA01D6D0077F605 /* TADotView.m */,
-				EBFE343F1BA01D6D0077F605 /* TAPageControl.h */,
-				EBFE34401BA01D6D0077F605 /* TAPageControl.m */,
-			);
-			path = TAPageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,14 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBFE344A1BA01D6D0077F605 /* TAPageControl.m in Sources */,
+				EB5D00001BEF27D8005B2D2E /* WMDotView.m in Sources */,
+				EB5DFFFE1BEF27D8005B2D2E /* TAPageControl.m in Sources */,
 				EBFE341A1BA01D560077F605 /* ViewController.m in Sources */,
-				EBFE34491BA01D6D0077F605 /* TADotView.m in Sources */,
-				EBFE344D1BA01D6D0077F605 /* WMDotView.m in Sources */,
-				EBFE34471BA01D6D0077F605 /* TAAbstractDotView.m in Sources */,
+				EB5DFFFF1BEF27D8005B2D2E /* WMAdPageView.m in Sources */,
+				EB5DFFFD1BEF27D8005B2D2E /* TADotView.m in Sources */,
+				EB5DFFFB1BEF27D8005B2D2E /* TAAbstractDotView.m in Sources */,
 				EBFE34171BA01D560077F605 /* AppDelegate.m in Sources */,
-				EBFE34481BA01D6D0077F605 /* TAAnimatedDotView.m in Sources */,
-				EBFE344C1BA01D6D0077F605 /* WMAdPageView.m in Sources */,
+				EB5DFFFC1BEF27D8005B2D2E /* TAAnimatedDotView.m in Sources */,
 				EBFE34141BA01D560077F605 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +468,7 @@
 				EBFE34331BA01D560077F605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBFE34341BA01D560077F605 /* Build configuration list for PBXNativeTarget "xiaomeiADPageTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +477,7 @@
 				EBFE34361BA01D560077F605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
