@@ -26,14 +26,13 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "xiaomeiADPage/WMAdPageView/*.h"
 
-  #s.subspec "TAPageControl" do |ta|
-  #    ta.source_files = "xiaomeiADPage/WMAdPageView/TAPageControl/*.{h,m}"
-  #    ta.public_header_files = "xiaomeiADPage/WMAdPageView/TAPageControl/*.h"
-  #end
-
+  s.subspec "TAPageControl" do |ta|
+      ta.source_files = "xiaomeiADPage/WMAdPageView/TAPageControl/*.{h,m}"
+      ta.public_header_files = "xiaomeiADPage/WMAdPageView/TAPageControl/*.h"
+  end
 
   s.framework  = "UIKit"
   s.requires_arc = true
-  s.dependency 'TAPageControl', '~> 0.2.0'
+  #s.dependency 'TAPageControl', '~> 0.2.0'
 
 end
