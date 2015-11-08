@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                    * 可设置页面指示位置和样式动效
                    DESC
 
-  s.homepage     = "https://coding.net/u/emilyzhou/p/WMADPageView/git"
+  s.homepage     = "https://github.com/emilyZhouwm/WMADPageView"
   s.license      = "MIT"
   s.author       = { "EmilyZhou" => "scarlettzwm@gmail.com" }
 
