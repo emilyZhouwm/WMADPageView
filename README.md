@@ -17,8 +17,8 @@
    
 #可以直接拖入使用或者：                         
 ##pod 'WMADPageView', :git => 'https://github.com/emilyZhouwm/WMADPageView.git'
-##或者将来可以
-##pod 'WMADPageView', '~> 0.1.0'
+##或者
+##pod 'WMADPageView', '~> 1.0.0'
 # 
                       
 ###网络图片方式：                        
@@ -37,7 +37,7 @@
 	}
 
 ##自定义页面指示样式
-####继承TAAbstractDotView实现方法
+####继承TAAbstractDotView实现其中方法
 
 
 #####欢迎star交流

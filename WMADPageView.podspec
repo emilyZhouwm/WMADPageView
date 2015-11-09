@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WMADPageView"
-  s.version      = "0.1.0"
+  s.version      = "1.0.0"
   s.summary      = "带点推拉效果的广告轮播效果"
 
   s.description  = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/emilyZhouwm/WMADPageView.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/emilyZhouwm/WMADPageView.git", :tag => "1.0.0" }
 
   s.source_files  = "WMADPageView/*.{h,m}"
 
