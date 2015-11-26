@@ -5,6 +5,10 @@
 ###可设置页面指示位置
 ###自定义页面指示样式动效
 ###简单使用：
+	1、Storyboard拖拽一个UIView到你要放轮播的位置，约束好大小（当然也可以用代码方式）
+	2、Storyboard中将这个UIView的类设置为WMAdPageView
+	3、连接IBOutlet到ViewController
+	4、设置_adPageView的image和其他。
 	
 	#import "WMAdPageView.h"
 
@@ -32,7 +36,7 @@
     #pragma mark - WMAdPageViewDelegate
 	- (void)setWebImage:(UIImageView *)imgView imgUrl:(NSString *)imgUrl
 	{
-	    // 例如
+	    // 例如，使用SDWebImage
 	    [imgView sd_setImageWithURL:[NSURL URLWithString:imgUrl] placeholderImage:[UIImage imageNamed:@"default"]];
 	}
 

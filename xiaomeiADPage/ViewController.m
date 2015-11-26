@@ -17,8 +17,8 @@
 }
 
 @property (weak, nonatomic) IBOutlet WMAdPageView *adPageView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *headHLayout; // 控制下拉时轮播放大
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *headTopLayout;// 控制上滚时轮播跟随上滚
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *headHLayout;   // 控制下拉时轮播放大
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *headTopLayout; // 控制上滚时轮播跟随上滚
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
@@ -34,10 +34,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
     _adPageView.dotPosition = WMAdPageDotRight;
     [_adPageView setAdsWithImages:@[@"m1", @"m2", @"m3", @"m4", @"m5"]
-                            block:^(NSInteger clickIndex){
+                            block:^(NSInteger clickIndex) {
                                 NSLog(@"%ld", (long)clickIndex);
                             }];
     
@@ -46,7 +46,7 @@
 //                            block:^(NSInteger clickIndex){
 //                                NSLog(@"%ld", (long)clickIndex);
 //                            }];
-    //[_adPageView setBAutoRoll:YES];
+    //[_adPageView setBAutoRoll:YES];小美这种方式开启自动轮播效果不好
     
     _HeadHeight = 112/*原始高度*/ * kScreen_Width / 320/*原始宽度*/;
     _headHLayout.constant = _HeadHeight;
@@ -79,6 +79,5 @@
     // 例如
     //[imgView sd_setImageWithURL:[NSURL URLWithString:imgUrl] placeholderImage:[UIImage imageNamed:@"default"]];
 }
-
 
 @end

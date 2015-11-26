@@ -176,22 +176,14 @@ static Class _cellClass = nil;
 
 - (void)dealloc
 {
-    if ([_autoRollTimer isValid]) {
-        [_autoRollTimer invalidate];
-        _autoRollTimer = nil;
-    }
+    [self stopMoving];
 }
 
 - (void)setBAutoRoll:(BOOL)bAutoRoll
 {
     _bAutoRoll = bAutoRoll;
-    if ([_autoRollTimer isValid]) {
-        [_autoRollTimer invalidate];
-        _autoRollTimer = nil;
-    }
-    if (_bAutoRoll) {
-        _autoRollTimer = [NSTimer scheduledTimerWithTimeInterval:kAutoRollTime target:self selector:@selector(scrollTimer) userInfo:nil repeats:YES];
-    } 
+    [self stopMoving];
+    [self startMoving];
 }
 
 - (void)setAdsWithImages:(NSArray *)imageArray block:(WMAdPageCallback)block
@@ -271,6 +263,37 @@ static Class _cellClass = nil;
     }
 }
 
+- (void)startMoving
+{
+    if (_bAutoRoll) {
+        _autoRollTimer = [NSTimer scheduledTimerWithTimeInterval:kAutoRollTime target:self selector:@selector(scrollTimer) userInfo:nil repeats:YES];
+        //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive) name:UIApplicationWillResignActiveNotification object:nil];
+        //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+    }
+}
+
+- (void)stopMoving
+{
+    if ([_autoRollTimer isValid]) {
+        [_autoRollTimer invalidate];
+        _autoRollTimer = nil;
+        //[[NSNotificationCenter defaultCenter] removeObserver:self];
+    }
+}
+
+#pragma mark - Notification
+// 程序被暂停的时候，应该停止计时器
+- (void)applicationWillResignActive
+{
+    [self stopMoving];
+}
+
+// 程序从暂停状态回归的时候，重新启动计时器
+- (void)applicationDidBecomeActive
+{
+    [self startMoving];
+}
+
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -327,17 +350,12 @@ static Class _cellClass = nil;
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
-    if ([_autoRollTimer isValid]) {
-        [_autoRollTimer invalidate];
-        _autoRollTimer = nil;
-    }
+    [self stopMoving];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    if (_bAutoRoll) {
-        _autoRollTimer = [NSTimer scheduledTimerWithTimeInterval:kAutoRollTime target:self selector:@selector(scrollTimer) userInfo:nil repeats:YES];
-    }
+    [self startMoving];
     if (scrollView.contentOffset.x >= self.frame.size.width * 2) {
         _indexShow++;
     } else if (scrollView.contentOffset.x < self.frame.size.width) {
