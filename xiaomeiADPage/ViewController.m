@@ -46,7 +46,7 @@
 //                            block:^(NSInteger clickIndex){
 //                                NSLog(@"%ld", (long)clickIndex);
 //                            }];
-    //[_adPageView setBAutoRoll:YES];小美这种方式开启自动轮播效果不好
+    [_adPageView setBAutoRoll:YES];//小美这种方式开启自动轮播效果不好
     
     _HeadHeight = 112/*原始高度*/ * kScreen_Width / 320/*原始宽度*/;
     _headHLayout.constant = _HeadHeight;
@@ -68,6 +68,9 @@
 {
     if (scrollView.contentOffset.y < 0) {
         _headHLayout.constant = _HeadHeight - scrollView.contentOffset.y;
+        if (_headTopLayout.constant != 0) {
+            _headTopLayout.constant = 0;
+        }
     } else {
         _headTopLayout.constant = -scrollView.contentOffset.y;
     }
