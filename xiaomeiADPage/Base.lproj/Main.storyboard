@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eFR-jn-Cb1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFR-jn-Cb1">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,19 +20,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAS-mh-m6t">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV8-hY-P4M">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉放大，上滚跟随" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xI5-zy-eA7">
-                                                <rect key="frame" x="84" y="281" width="153" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="xI5-zy-eA7" firstAttribute="top" secondItem="nV8-hY-P4M" secondAttribute="top" constant="281" id="3MJ-gv-9gG"/>
                                             <constraint firstItem="xI5-zy-eA7" firstAttribute="centerX" secondItem="nV8-hY-P4M" secondAttribute="centerX" id="VBU-xf-7ox"/>
@@ -54,8 +52,7 @@
                                 </variation>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25d-3x-I2U" customClass="WMAdPageView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="112"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="25d-3x-I2U" secondAttribute="height" multiplier="16:11" id="Aae-uN-eIE"/>
                                     <constraint firstAttribute="width" secondItem="25d-3x-I2U" secondAttribute="height" multiplier="1029:360" id="HiX-qJ-MWG"/>
@@ -70,7 +67,7 @@
                                 </variation>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="25d-3x-I2U" firstAttribute="leading" secondItem="IDy-hO-dN0" secondAttribute="leading" id="9yg-oe-uX0"/>
                             <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="1PD-Ca-Z9K" secondAttribute="bottom" id="Aey-J8-nFw"/>
@@ -97,7 +94,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="d6H-SJ-bde"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="adPageView" destination="25d-3x-I2U" id="wmr-Vh-6fY"/>
                         <outlet property="headHLayout" destination="R2Q-4N-ggM" id="Ces-57-s4h"/>
@@ -107,14 +103,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpr-jO-K4c" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669" y="461"/>
+            <point key="canvasLocation" x="973" y="461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ic5-qX-ENH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eFR-jn-Cb1" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="egF-Mr-35W">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
