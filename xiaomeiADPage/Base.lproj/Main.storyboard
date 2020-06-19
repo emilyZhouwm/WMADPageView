@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eFR-jn-Cb1">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eFR-jn-Cb1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,19 +12,18 @@
         <scene sceneID="nYr-iN-ezj">
             <objects>
                 <viewController id="R6h-TH-1an" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1PD-Ca-Z9K"/>
-                        <viewControllerLayoutGuide type="bottom" id="Bhl-fZ-uJ4"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IDy-hO-dN0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAS-mh-m6t">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV8-hY-P4M">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下拉放大，上滚跟随" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xI5-zy-eA7">
+                                                <rect key="frame" x="129" y="281" width="156" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -52,11 +52,12 @@
                                 </variation>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25d-3x-I2U" customClass="WMAdPageView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="145"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="25d-3x-I2U" secondAttribute="height" multiplier="16:11" id="Aae-uN-eIE"/>
                                     <constraint firstAttribute="width" secondItem="25d-3x-I2U" secondAttribute="height" multiplier="1029:360" id="HiX-qJ-MWG"/>
-                                    <constraint firstAttribute="height" constant="112" id="R2Q-4N-ggM"/>
+                                    <constraint firstAttribute="height" constant="145" id="R2Q-4N-ggM"/>
                                     <constraint firstAttribute="width" secondItem="25d-3x-I2U" secondAttribute="height" multiplier="16:11" id="jW6-Cf-51i"/>
                                 </constraints>
                                 <variation key="default">
@@ -69,26 +70,27 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="25d-3x-I2U" firstAttribute="leading" secondItem="IDy-hO-dN0" secondAttribute="leading" id="9yg-oe-uX0"/>
-                            <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="1PD-Ca-Z9K" secondAttribute="bottom" id="Aey-J8-nFw"/>
-                            <constraint firstItem="BAS-mh-m6t" firstAttribute="leading" secondItem="IDy-hO-dN0" secondAttribute="leading" id="Dal-Ll-V35"/>
+                            <constraint firstItem="25d-3x-I2U" firstAttribute="leading" secondItem="rFg-yF-zI6" secondAttribute="leading" id="9yg-oe-uX0"/>
+                            <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="rFg-yF-zI6" secondAttribute="top" id="Aey-J8-nFw"/>
+                            <constraint firstItem="BAS-mh-m6t" firstAttribute="leading" secondItem="rFg-yF-zI6" secondAttribute="leading" id="Dal-Ll-V35"/>
                             <constraint firstItem="nV8-hY-P4M" firstAttribute="width" secondItem="IDy-hO-dN0" secondAttribute="width" id="Hwi-Cm-Zz4"/>
-                            <constraint firstItem="25d-3x-I2U" firstAttribute="centerX" secondItem="IDy-hO-dN0" secondAttribute="centerX" id="IHH-9z-JSb"/>
-                            <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="IDy-hO-dN0" secondAttribute="top" id="Ias-Yx-nht"/>
+                            <constraint firstItem="25d-3x-I2U" firstAttribute="centerX" secondItem="rFg-yF-zI6" secondAttribute="centerX" id="IHH-9z-JSb"/>
                             <constraint firstAttribute="bottom" secondItem="BAS-mh-m6t" secondAttribute="bottom" id="KUa-S7-YeZ"/>
-                            <constraint firstAttribute="trailing" secondItem="BAS-mh-m6t" secondAttribute="trailing" id="LhT-Mh-SGt"/>
-                            <constraint firstAttribute="trailing" secondItem="25d-3x-I2U" secondAttribute="trailing" id="TQc-cs-J6R"/>
-                            <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="1PD-Ca-Z9K" secondAttribute="bottom" id="psf-hS-gQM"/>
+                            <constraint firstItem="rFg-yF-zI6" firstAttribute="trailing" secondItem="BAS-mh-m6t" secondAttribute="trailing" id="LhT-Mh-SGt"/>
+                            <constraint firstItem="rFg-yF-zI6" firstAttribute="top" secondItem="BAS-mh-m6t" secondAttribute="top" id="N30-uy-MNo"/>
+                            <constraint firstItem="rFg-yF-zI6" firstAttribute="trailing" secondItem="25d-3x-I2U" secondAttribute="trailing" id="TQc-cs-J6R"/>
+                            <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="rFg-yF-zI6" secondAttribute="top" id="psf-hS-gQM"/>
                             <constraint firstItem="BAS-mh-m6t" firstAttribute="top" secondItem="IDy-hO-dN0" secondAttribute="top" id="vHQ-ik-C05"/>
-                            <constraint firstItem="25d-3x-I2U" firstAttribute="top" secondItem="1PD-Ca-Z9K" secondAttribute="bottom" id="zd0-k8-mwW"/>
+                            <constraint firstItem="25d-3x-I2U" firstAttribute="top" secondItem="rFg-yF-zI6" secondAttribute="top" id="zd0-k8-mwW"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="rFg-yF-zI6"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Aey-J8-nFw"/>
                                 <exclude reference="psf-hS-gQM"/>
                                 <exclude reference="vHQ-ik-C05"/>
-                                <exclude reference="Hwi-Cm-Zz4"/>
                                 <exclude reference="9yg-oe-uX0"/>
+                                <exclude reference="Hwi-Cm-Zz4"/>
                                 <exclude reference="TQc-cs-J6R"/>
                             </mask>
                         </variation>
@@ -111,7 +113,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eFR-jn-Cb1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="egF-Mr-35W">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

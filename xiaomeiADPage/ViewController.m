@@ -66,6 +66,7 @@
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    NSLog(@"%f", scrollView.contentOffset.y);
     if (scrollView.contentOffset.y < 0) {
         _headHLayout.constant = _HeadHeight - scrollView.contentOffset.y;
         if (_headTopLayout.constant != 0) {
